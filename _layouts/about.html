@@ -42,7 +42,28 @@ layout: default
 
           <!-- News -->
           {% if page.news -%}
-            <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">news</a></h2>
+            <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">My research activities in a few minutes</a></h2>
+            <div class=" float-{%- if page.profile2.align == 'center' -%}center{%- else -%}right{%- endif -%}">
+              {%- if page.profile2.image %}
+                {%- assign profile2_image_path = page.profile2.image | prepend: 'assets/img/' -%}
+  
+                {% if page.profile2.image_circular %}
+                  {%- assign profile2_image_class = "img-fluid z-depth-1 rounded-circle" -%}
+                {% else %}
+                  {%- assign profile2_image_class = "img-fluid z-depth-1 rounded" -%}
+                {% endif %}
+  
+                {% include figure.html 
+                path=profile2_image_path 
+                class=profile2_image_class
+                alt=page.profile2.image -%}
+              {% endif -%}
+              {%- if page.profile2.address %}
+              <div class="address">
+                {{ page.profile2.address }}
+              </div>
+              {%- endif %}
+            </div>
             {%- include news.html %}
           {%- endif %}
 

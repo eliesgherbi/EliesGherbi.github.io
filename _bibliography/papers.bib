@@ -1,16 +1,95 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
 
-@book{einstein1956investigations,
+
+@InProceedings{elies19,
+  bibtex_show={true},
+  title = 	 {An Encoding Adversarial Network for Anomaly Detection},
+  author =       {Gherbi, Elies and Hanczar, Blaise and Janodet, Jean-Christophe and Klaudel, Witold},
+  booktitle = 	 {Proceedings of The Eleventh Asian Conference on Machine Learning},
+  pages = 	 {188--203},
+  year = 	 {2019},
+  editor = 	 {Lee, Wee Sun and Suzuki, Taiji},
+  volume = 	 {101},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {17--19 Nov},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v101/gherbi19a/gherbi19a.pdf},
+  url = 	 {https://proceedings.mlr.press/v101/gherbi19a.html},
+  abstract = 	 {Anomaly detection is a standard problem in Machine Learning with various applications such as health-care, predictive maintenance, and cyber-security. In such applications, the data is unbalanced: the rate of regular examples is much higher than the anomalous examples. The emergence of the Generative Adversarial Networks (GANs) has recently brought new algorithms for anomaly detection. Most of them use the generator as a proxy for the reconstruction loss. The idea is that the generator cannot reconstruct an anomaly. We develop an alternative approach for anomaly detection, based on an Encoding Adversarial Network (AnoEAN), which maps the data to a latent space (decision space), where the detection of anomalies is done directly by calculating a score. Our encoder is learned by adversarial learning, using two loss functions, the first constraining the encoder to project regular data into a Gaussian distribution and the second, to project anomalous data outside this distribution. We conduct a series of experiments on several standard bases and show that our approach outperforms the state of the art when using 10% anomalies during the learning stage, and detects unseen anomalies.}
+}
+
+
+@InProceedings{10.1007/978-3-030-63820-7_6,
+author="Gherbi, Elies
+and Hanczar, Blaise
+and Janodet, Jean-Christophe
+and Klaudel, Witold",
+editor="Yang, Haiqin
+and Pasupa, Kitsuchart
+and Leung, Andrew Chi-Sing
+and Kwok, James T.
+and Chan, Jonathan H.
+and King, Irwin",
+title="Deep Learning for In-Vehicle Intrusion Detection System",
+booktitle="Neural Information Processing",
+year="2020",
+publisher="Springer International Publishing",
+address="Cham",
+pages="50--58",
+abstract="Modern and future vehicles are complex cyber-physical systems. The connection to their outside environment raises many security problems that impact our safety directly. In this work, we propose a Deep CAN intrusion detection system framework. We introduce a multivariate time series representation for asynchronous CAN data which enhances the temporal modelling of deep learning architectures for anomaly detection. We study different deep learning tasks (supervised/unsupervised) and compare several architectures, in order to design an in-vehicle intrusion detection system that fits in-vehicle computational constraints. We conduct experiments with many types of attacks on an in-vehicle CAN using SynCAn Dataset.",
+isbn="978-3-030-63820-7"
+}
+
+
+@inproceedings{gherbi:hal-02473865,
+  TITLE = {{Construction d'espace latent pour la d{\'e}tection d'anomalies par apprentissage adversarial}},
+  AUTHOR = {Gherbi, Elies and Hanczar, Blaise and Janodet, Jean-Christophe and Klaudel, Witold},
+  URL = {https://hal.science/hal-02473865},
+  BOOKTITLE = {{Conf{\'e}rence sur l'Apprentissage automatique (CAP 2019)}},
+  ADDRESS = {Toulouse, France},
+  HAL_LOCAL_REFERENCE = {CTI},
+  YEAR = {2019},
+  MONTH = Jul,
+  KEYWORDS = {EAN ; Adversarial Learning ; GAN ; Mots-clef : D{\'e}tection d'anomalies},
+  PDF = {https://hal.science/hal-02473865/file/CAP__GAN_for_Anomaly_detection_review.pdf},
+  HAL_ID = {hal-02473865},
+  HAL_VERSION = {v1},
+}
+
+
+@INPROCEEDINGS{9988392,
+
+  author={Gherbi, Elies and Hanczar, Blaise and Janodet, Jean-Christophe and Klaudel, Witold},
+
+  booktitle={2022 International Conference on Electrical, Computer, Communications and Mechatronics Engineering (ICECCME)}, 
+
+  title={DAD: A Distributed Anomaly Detection framework for future In-vehicle network}, 
+
+  year={2022},
+
+  volume={},
+
+  number={},
+
+  pages={1-6},
+
+  doi={10.1109/ICECCME55909.2022.9988392}}
+
+
+
+
+@book{einstein19560investigations,
   bibtex_show={true},
   title={Investigations on the Theory of the Brownian Movement},
   author={Einstein, Albert},
-  year={1956},
+  year={19560},
   publisher={Courier Corporation,},
   preview={brownian-motion.gif}
 }
+
+
 
 @article{einstein1950meaning,
   abbr={AJP},
